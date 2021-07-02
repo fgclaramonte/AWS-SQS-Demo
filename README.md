@@ -45,9 +45,44 @@ or::
 Run AWS-SQS-Demo Web Service
 ----------------------------
 
+First, AWS credential is needed to access to SQS.
+
+For credential settings, the folder /aws must be copied to user home folder.
+
+In Linux/OSX Systems::
+
+	cp -r aws ~/.aws
+	
+In Windows:
+
+	Copy to C:\Users\ username \. aws
+	
+Now, edit .aws/credentials file with Key id and secret key provided by the AWS
+user account.::
+
+	[profile1]
+	aws_access_key_id=XXXXXXXXXXXX
+	aws_secret_access_key=YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+
+
+To run HTTP service::
+
+	python3 server.py
+	
 
 Usage
 -----
+
+To load next message in the queue, with GET method:
+
+http://localhost:5000/api/v1/messages
+
+To send new messages to the queue, with POST method:
+
+http://localhost:5000/api/v1/send 
+
+with parameter message="<new message>"
+
 
 
 
