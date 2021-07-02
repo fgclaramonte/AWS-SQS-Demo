@@ -18,7 +18,7 @@ def api_get_messages():
     print (messages)
     return jsonify(messages)
 
-@app.route('/api/v1/send/', methods=['POST'])
+@app.route('/api/v1/send', methods=['POST'])
 def api_create_mensaje():
     json = request.get_json(force=True)
 
