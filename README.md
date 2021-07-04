@@ -35,7 +35,7 @@ For Windows, open a command window (cmd):
 
 Download AWS-SQS-Demo:
 
-Get latest release from https://github.com/fgclaramonte/AWS-SQS-Demo/releases/tag/v0.1
+Get latest release from https://github.com/fgclaramonte/AWS-SQS-Demo/releases/latest
 or clone the repository https://github.com/fgclaramonte/AWS-SQS-Demo.git
  
 Uncompress and go to source dir::
