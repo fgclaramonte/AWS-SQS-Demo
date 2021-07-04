@@ -53,6 +53,7 @@ def receive_message():
         print("---\n{}\n---".format(message['Body']))
 
         '''
+        # Optional code for remove messages.
         receipt_handle = message['ReceiptHandle']
         # Delete received message from queue
         sqs.delete_message(

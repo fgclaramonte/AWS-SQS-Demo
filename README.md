@@ -13,7 +13,7 @@ the queued messages.
 Installation
 ------------
 
-Main depdendency is Python platform. On any GNU/Linux Distribution is installed
+Main dependency is Python platform. On any GNU/Linux Distribution is installed
 by default. On Windows and OSX platforms can be downloaded and installed from
 official website: https://www.python.org/downloads/
 
@@ -31,15 +31,25 @@ For Windows, open a command window (cmd):
 
 	curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 	py get-pip.py
+
+
+Download AWS-SQS-Demo:
+
+Get latest release from https://github.com/fgclaramonte/AWS-SQS-Demo/releases/tag/v0.1
+or clone the repository https://github.com/fgclaramonte/AWS-SQS-Demo.git
+ 
+Uncompress and go to source dir::
+
+	tar xvfz AWS-SQS-Demo-0.1.tar.gz
+	(or unzip)
+	
+	cd AWS-SQS-Demo-0.1
 	
 
 Install AWS-SQS-Demo::
 
 	pip3 install -r requirements.txt
 
-or::
-
-	pip install -r requirements.txt
 	
 
 Run AWS-SQS-Demo Web Service
@@ -64,6 +74,8 @@ user account.::
 	aws_access_key_id=XXXXXXXXXXXX
 	aws_secret_access_key=YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
 
+If you need a testing access, please contact me.
+
 
 To run HTTP service::
 
@@ -84,5 +96,11 @@ http://localhost:5000/api/v1/send
 with parameter message="<new message>"
 
 
+Support
+-------
 
+Please if you need some help or support to install or run this service, request for help at:
+francisco@garciac.es
+Or at my telephone number.
 
+Thank you, hope you agree with this implementation.
