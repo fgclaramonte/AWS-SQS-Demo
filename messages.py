@@ -1,7 +1,9 @@
 '''
 AWS SQS. 
 
+Module to send and receibe messages from/to AWS-SQS.
 
+francisco@garciac.es
 '''
 import boto3
 import os

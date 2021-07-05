@@ -1,4 +1,11 @@
+'''
+AWS-SQS Demo
 
+Simple Web Service frontend to send and receive messages from AWS SQS service.
+This web service runs on port 5000.
+
+francisco@garciac.es
+'''
 import flask
 from flask import request, jsonify
 
@@ -24,14 +31,8 @@ def api_create_mensaje():
 
     if json.get('message') is None:
         return jsonify({'message': 'Bad request'}), 400
-    #if json.get('data') is None:
-    #    return jsonify({'message': 'Bad request'}), 400
 
-    #user = User.create(json['username'])
     mensaje = json['message']
-    #dato = json['data']
-    #print ("{} -- {}".format(mensaje,dato))
-
     res = msg.send_message(mensaje)
     
     return jsonify({'res': mensaje })

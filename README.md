@@ -41,10 +41,10 @@ or clone the repository https://github.com/fgclaramonte/AWS-SQS-Demo.git
  
 Uncompress and go to source dir::
 
-	tar xvfz AWS-SQS-Demo-0.1.tar.gz
+	tar xvfz AWS-SQS-Demo-x.y.tar.gz
 	(or unzip)
 	
-	cd AWS-SQS-Demo-0.1
+	cd AWS-SQS-Demo-x.y
 	
 
 Install AWS-SQS-Demo::
@@ -95,6 +95,15 @@ To send new messages to the queue, with POST method:
 http://localhost:5000/api/v1/send 
 
 with parameter message="<new message>"
+
+
+Testing
+-------
+
+Run automated tests cases. 
+In src directory run pytest command::
+
+	pytest-3 -s -q test_messages.py
 
 
 Support
