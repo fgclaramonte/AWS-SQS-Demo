@@ -109,8 +109,7 @@ In src directory run pytest command::
 Support
 -------
 
-Please if you need some help or support to install or run this service, request for help at:
-francisco@garciac.es
+Please if you need some help or support to install or run this service, request for help at my email. 
 Or at my telephone number.
 
 Thank you, hope you agree with this implementation.
